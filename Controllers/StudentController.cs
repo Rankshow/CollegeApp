@@ -1,3 +1,4 @@
+using CollegeApp.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CollegeApp.Controllers
@@ -7,9 +8,24 @@ namespace CollegeApp.Controllers
     public class StudentController : ControllerBase
     {
         [HttpGet]
-        public string GetStudentName()
+        public IEnumerable<Student> GetStudents()
         {
-            return "Student name 1";
+            return new List<Student> { 
+                new Student
+              {
+                Id = 1,
+                StudentName = "Student 1",
+                Email = "studentemail@gmail",
+                Address = "Lagos, Nigeria"
+              },
+              new Student
+                {
+                Id = 2,
+                StudentName = "Student 2",
+                Email = "studentemail@gmail",
+                Address = "Lagos, Nigeria"
+              }
+            };
         }
     }
 }
