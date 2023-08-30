@@ -6,15 +6,15 @@ namespace CollegeApp.Models
             new Student
               {
                 Id = 1,
-                StudentName = "Student 1",
-                Email = "studentemail1@gmail.com",
+                StudentName = "chioma",
+                Email = "Chiomail1@gmail.com",
                 Address = "Lagos, Nigeria"
               },
               new Student
                 {
                 Id = 2,
-                StudentName = "Student 2",
-                Email = "studentemail2@gmail.com",
+                StudentName = "philip",
+                Email = "philipryrl2@gmail.com",
                 Address = "Abia, Nigeria"
               } 
         };
