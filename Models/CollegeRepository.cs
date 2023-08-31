@@ -16,7 +16,14 @@ namespace CollegeApp.Models
                 StudentName = "philip",
                 Email = "philipryrl2@gmail.com",
                 Address = "Abia, Nigeria"
-              } 
+              },
+              new Student
+                {
+                Id = 3,
+                StudentName = "veronica",
+                Email = "veroboodl2@gmail.com",
+                Address = "Enugu, Nigeria"
+              }
         };
     }
 }
