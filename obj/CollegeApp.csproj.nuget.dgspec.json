@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Micheal\\CollegeApp\\CollegeApp.csproj": {}
+    "c:\\Users\\Micheal\\CollegeApp\\CollegeApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Micheal\\CollegeApp\\CollegeApp.csproj": {
+    "c:\\Users\\Micheal\\CollegeApp\\CollegeApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Micheal\\CollegeApp\\CollegeApp.csproj",
+        "projectUniqueName": "c:\\Users\\Micheal\\CollegeApp\\CollegeApp.csproj",
         "projectName": "CollegeApp",
-        "projectPath": "C:\\Users\\Micheal\\CollegeApp\\CollegeApp.csproj",
+        "projectPath": "c:\\Users\\Micheal\\CollegeApp\\CollegeApp.csproj",
         "packagesPath": "C:\\Users\\Micheal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Micheal\\CollegeApp\\obj\\",
+        "outputPath": "c:\\Users\\Micheal\\CollegeApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Micheal\\AppData\\Roaming\\NuGet\\NuGet.Config"
