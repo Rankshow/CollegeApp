@@ -13,19 +13,6 @@ namespace CollegeApp.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public ActionResult<IEnumerable<StudentDTO>> GetStudents()
         {
-            // ! Commented DTO is another option
-            // var students = new List<StudentDTO>();
-            // foreach (var item in CollegeRepository.Students)
-            // {
-            //     StudentDTO obj = new StudentDTO()
-            //     {
-            //         Id = item.Id,
-            //         StudentName = item.StudentName,
-            //         Address = item.Address, 
-            //         Email = item.Email,
-            //     };
-            //     students.Add(obj);
-            // }
             //  * Using Link DTO is a better choice
             var students = CollegeRepository.Students.Select(s => new StudentDTO()
             {
@@ -91,6 +78,37 @@ namespace CollegeApp.Controllers
             // Ok - 200 - success
             return Ok(studentDTO);
         }
+       
+        [HttpPost]
+        [Route("Create")] 
+        //apo/student/create
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public ActionResult<StudentDTO> CreateStudent([FromBody]StudentDTO model)
+        {
+            // if (!ModelState.IsValid)
+            //  return BadRequest(ModelState);
+
+            if (model == null)
+            return BadRequest();
+            int newId = CollegeRepository.Students.LastOrDefault().Id + 1;
+            Student student = new Student
+            {
+                Id = newId, 
+                StudentName = model.StudentName,
+                Address = model.Address,
+                Email = model.Email
+            };
+            CollegeRepository.Students.Add(student);
+            
+            model.Id = student.Id;
+            // status - 201
+            // http://localhost:5210/api/Student/4 - the created Url
+            // New student details
+            return CreatedAtRoute("GetStudentById", new { id = model.Id }, model);
+        }
+       
         [HttpDelete("{id}", Name = "DeleteStudentById")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
