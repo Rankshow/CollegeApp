@@ -81,17 +81,25 @@ namespace CollegeApp.Controllers
        
         [HttpPost]
         [Route("Create")] 
-        //apo/student/create
+        //api/student/create
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public ActionResult<StudentDTO> CreateStudent([FromBody]StudentDTO model)
         {
+            
             // if (!ModelState.IsValid)
             //  return BadRequest(ModelState);
 
             if (model == null)
             return BadRequest();
+
+            // if (model.AdmissionDate < DateTime.Now)
+            // {
+            //     ModelState.AddModelError("AdmissionDate Error", "Admission data must be greater than or eqaaul to today date");
+            //     return BadRequest(ModelState);
+            // }
+
             int newId = CollegeRepository.Students.LastOrDefault().Id + 1;
             Student student = new Student
             {
