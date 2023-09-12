@@ -130,7 +130,7 @@ namespace CollegeApp.Controllers
             if (model == null || model.Id <= 0)
              return BadRequest();
 
-            var existingStudent = CollegeRepository.Students.Where(s => s.Id == model.Id).FirstOrDefault();
+            var existingStudent = CollegeRepository.Students.Where(s => s.Id == model.Id).FirstOrDefault(); 
 
             if (existingStudent == null)
             return NotFound();
@@ -138,7 +138,7 @@ namespace CollegeApp.Controllers
             existingStudent.StudentName =  model.StudentName;
             existingStudent.Email = model.Email;
             existingStudent.Address = model.Address;
-
+            
             return NoContent();
         }
 
