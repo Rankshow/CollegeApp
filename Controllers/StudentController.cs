@@ -29,7 +29,7 @@ namespace CollegeApp.Controllers
         [Route("{id:int}", Name = "GetStudentById")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)] 
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public ActionResult<StudentDTO> GetStudentById(int id)
         {
@@ -181,7 +181,8 @@ namespace CollegeApp.Controllers
             return NoContent();
         }
 
-        [HttpDelete("{id}", Name = "DeleteStudentById")]
+        [HttpDelete("Delete/{id}", Name = "DeleteStudentById")]
+        //api/student/delete/1
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
