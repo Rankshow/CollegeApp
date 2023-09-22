@@ -8,9 +8,9 @@ namespace CollegeApp.Controllers
     public class DemoController : ControllerBase
     {
         private readonly IMyLogger _myLogger;
-        public DemoController()
+        public DemoController(IMyLogger myLogger)
         {
-            _myLogger = new LogToServerMermory();
+            _myLogger = myLogger;
         }
         [HttpGet]
         public ActionResult Index()

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace CollegeApp.MyLogging
 {
-    public class LogToServerMermory : IMyLogger
+    public class LogToServerMemory : IMyLogger
     {
         public void Log(string message)
         {
