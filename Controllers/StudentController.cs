@@ -7,21 +7,28 @@ namespace CollegeApp.Controllers
     [Route("api/[controller]")]
     [ApiController]
     public class StudentController : ControllerBase
-    {
+    {   
+        // 1.loosely couple technique
+        private readonly ILogger<StudentController> _logger;
+        public StudentController(ILogger<StudentController> logger)
+        {
+            _logger = logger;
+        }
+
         [HttpGet]
         [Route("All", Name = "GetAllStudent")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public ActionResult<IEnumerable<StudentDTO>> GetStudents()
         {
-            //  * Using Link DTO is a better choice
+            _logger.LogInformation("GetStudent method started executing");
             var students = CollegeRepository.Students.Select(s => new StudentDTO()
             {
                 Id = s.Id,
                 StudentName = s.StudentName,
                 Address = s.Address,
                 Email = s.Email
-            });
+            }).ToList();
             // ! Ok - 200 - success
             return Ok(students);
         }
@@ -35,12 +42,18 @@ namespace CollegeApp.Controllers
         {
             // BadRequest - 400 - BadRequest - Client Error
             if (id <= 0)
-              return BadRequest();
+            {
+                _logger.LogWarning("Bad Request");
+                return BadRequest();
+            }
 
               var student = CollegeRepository.Students.Where(n => n.Id == id).FirstOrDefault();
             //   NotFound - 404 - NotFound - Client error
                 if (student == null)
-                return NotFound($"The student with id {id} not found");
+                {
+                    _logger.LogError("Student not found with the giving Id");
+                    return NotFound($"The student with id {id} not found");
+                }
 
                 var studentDTO = new StudentDTO
                 {

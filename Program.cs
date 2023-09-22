@@ -2,6 +2,8 @@ using CollegeApp.MyLogging;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
+
 // Add services to the container.
 
 builder.Services.AddControllers(options => options.ReturnHttpNotAcceptable = true).AddNewtonsoftJson().AddXmlDataContractSerializerFormatters();
@@ -9,7 +11,7 @@ builder.Services.AddControllers(options => options.ReturnHttpNotAcceptable = tru
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddScoped<IMyLogger, LogToDB>();
+builder.Services.AddTransient<IMyLogger, LogToServerMemory>();
 
 var app = builder.Build();
 
