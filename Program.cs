@@ -1,6 +1,9 @@
 using CollegeApp.MyLogging;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole();
+builder.Logging.AddDebug();
 
 
 

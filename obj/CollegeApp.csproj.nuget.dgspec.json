@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CHIZZY STANLEOVIC\\CollegeApp\\CollegeApp.csproj": {}
+    "c:\\Users\\CHIZZY STANLEOVIC\\CollegeApp\\CollegeApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CHIZZY STANLEOVIC\\CollegeApp\\CollegeApp.csproj": {
+    "c:\\Users\\CHIZZY STANLEOVIC\\CollegeApp\\CollegeApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CHIZZY STANLEOVIC\\CollegeApp\\CollegeApp.csproj",
+        "projectUniqueName": "c:\\Users\\CHIZZY STANLEOVIC\\CollegeApp\\CollegeApp.csproj",
         "projectName": "CollegeApp",
-        "projectPath": "C:\\Users\\CHIZZY STANLEOVIC\\CollegeApp\\CollegeApp.csproj",
+        "projectPath": "c:\\Users\\CHIZZY STANLEOVIC\\CollegeApp\\CollegeApp.csproj",
         "packagesPath": "C:\\Users\\CHIZZY STANLEOVIC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CHIZZY STANLEOVIC\\CollegeApp\\obj\\",
+        "outputPath": "c:\\Users\\CHIZZY STANLEOVIC\\CollegeApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\CHIZZY STANLEOVIC\\AppData\\Roaming\\NuGet\\NuGet.Config",
