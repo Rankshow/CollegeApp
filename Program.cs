@@ -1,11 +1,18 @@
 using CollegeApp.MyLogging;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Logging.ClearProviders();
-builder.Logging.AddConsole();
-builder.Logging.AddDebug();
 
+// ! Logger for serilog
+Log.Logger = new LoggerConfiguration().
+     MinimumLevel.Information()
+    .WriteTo.File("Log/log.txt", rollingInterval: RollingInterval.Minute)
+    .CreateLogger();
 
+// use this line to overright the built-in loggers
+builder.Host.UseSerilog();
+// User serilog alog with built-in loggers
+builder.Logging.AddSerilog();
 
 // Add services to the container.
 

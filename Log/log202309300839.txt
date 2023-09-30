@@ -1,0 +1,4 @@
+2023-09-30 08:39:58.165 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5210/swagger/index.html - -
+2023-09-30 08:39:58.834 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5210/swagger/index.html - -
+2023-09-30 08:39:59.238 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5210/swagger/index.html - - - 200 - text/html;charset=utf-8 404.4514ms
+2023-09-30 08:39:59.239 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5210/swagger/index.html - - - 200 - text/html;charset=utf-8 1073.5492ms

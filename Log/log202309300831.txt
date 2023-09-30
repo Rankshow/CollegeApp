@@ -1,0 +1,4 @@
+2023-09-30 08:31:44.590 +01:00 [INF] Now listening on: http://localhost:5210
+2023-09-30 08:31:45.160 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-30 08:31:45.162 +01:00 [INF] Hosting environment: Development
+2023-09-30 08:31:45.162 +01:00 [INF] Content root path: C:\Users\CHIZZY STANLEOVIC\CollegeApp

@@ -72,3 +72,13 @@ C:\Users\CHIZZY STANLEOVIC\CollegeApp\obj\Debug\net7.0\refint\CollegeApp.dll
 C:\Users\CHIZZY STANLEOVIC\CollegeApp\obj\Debug\net7.0\CollegeApp.pdb
 C:\Users\CHIZZY STANLEOVIC\CollegeApp\obj\Debug\net7.0\CollegeApp.genruntimeconfig.cache
 C:\Users\CHIZZY STANLEOVIC\CollegeApp\obj\Debug\net7.0\ref\CollegeApp.dll
+C:\Users\CHIZZY STANLEOVIC\CollegeApp\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\CHIZZY STANLEOVIC\CollegeApp\bin\Debug\net7.0\Serilog.dll
+C:\Users\CHIZZY STANLEOVIC\CollegeApp\bin\Debug\net7.0\Serilog.AspNetCore.dll
+C:\Users\CHIZZY STANLEOVIC\CollegeApp\bin\Debug\net7.0\Serilog.Extensions.Hosting.dll
+C:\Users\CHIZZY STANLEOVIC\CollegeApp\bin\Debug\net7.0\Serilog.Extensions.Logging.dll
+C:\Users\CHIZZY STANLEOVIC\CollegeApp\bin\Debug\net7.0\Serilog.Formatting.Compact.dll
+C:\Users\CHIZZY STANLEOVIC\CollegeApp\bin\Debug\net7.0\Serilog.Settings.Configuration.dll
+C:\Users\CHIZZY STANLEOVIC\CollegeApp\bin\Debug\net7.0\Serilog.Sinks.Console.dll
+C:\Users\CHIZZY STANLEOVIC\CollegeApp\bin\Debug\net7.0\Serilog.Sinks.Debug.dll
+C:\Users\CHIZZY STANLEOVIC\CollegeApp\bin\Debug\net7.0\Serilog.Sinks.File.dll

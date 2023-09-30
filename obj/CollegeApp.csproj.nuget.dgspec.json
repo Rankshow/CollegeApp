@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\CHIZZY STANLEOVIC\\CollegeApp\\CollegeApp.csproj": {}
+    "C:\\Users\\CHIZZY STANLEOVIC\\CollegeApp\\CollegeApp.csproj": {}
   },
   "projects": {
-    "c:\\Users\\CHIZZY STANLEOVIC\\CollegeApp\\CollegeApp.csproj": {
+    "C:\\Users\\CHIZZY STANLEOVIC\\CollegeApp\\CollegeApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\CHIZZY STANLEOVIC\\CollegeApp\\CollegeApp.csproj",
+        "projectUniqueName": "C:\\Users\\CHIZZY STANLEOVIC\\CollegeApp\\CollegeApp.csproj",
         "projectName": "CollegeApp",
-        "projectPath": "c:\\Users\\CHIZZY STANLEOVIC\\CollegeApp\\CollegeApp.csproj",
+        "projectPath": "C:\\Users\\CHIZZY STANLEOVIC\\CollegeApp\\CollegeApp.csproj",
         "packagesPath": "C:\\Users\\CHIZZY STANLEOVIC\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\CHIZZY STANLEOVIC\\CollegeApp\\obj\\",
+        "outputPath": "C:\\Users\\CHIZZY STANLEOVIC\\CollegeApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\CHIZZY STANLEOVIC\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -52,6 +52,10 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.10, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

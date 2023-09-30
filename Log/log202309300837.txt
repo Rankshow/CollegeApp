@@ -1,0 +1,16 @@
+2023-09-30 08:37:29.265 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5210/_framework/aspnetcore-browser-refresh.js - -
+2023-09-30 08:37:30.031 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5210/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 831.5669ms
+2023-09-30 08:37:33.331 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5210/swagger/v1/swagger.json - -
+2023-09-30 08:37:45.284 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5210/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 11953.4318ms
+2023-09-30 08:37:53.975 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5210/api/Demo - -
+2023-09-30 08:37:54.143 +01:00 [WRN] Failed to determine the https port for redirect.
+2023-09-30 08:37:54.253 +01:00 [INF] Executing endpoint 'CollegeApp.Controllers.DemoController.Index (CollegeApp)'
+2023-09-30 08:37:54.631 +01:00 [INF] Route matched with {action = "Index", controller = "Demo"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller CollegeApp.Controllers.DemoController (CollegeApp).
+2023-09-30 08:37:54.797 +01:00 [INF] Logging information
+2023-09-30 08:37:54.797 +01:00 [WRN] Logging trace
+2023-09-30 08:37:54.797 +01:00 [ERR] Logging error messsage
+2023-09-30 08:37:54.797 +01:00 [FTL] Logging critical message
+2023-09-30 08:37:54.801 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-09-30 08:37:54.857 +01:00 [INF] Executed action CollegeApp.Controllers.DemoController.Index (CollegeApp) in 197.5916ms
+2023-09-30 08:37:54.857 +01:00 [INF] Executed endpoint 'CollegeApp.Controllers.DemoController.Index (CollegeApp)'
+2023-09-30 08:37:54.858 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5210/api/Demo - - - 200 0 - 882.4104ms
